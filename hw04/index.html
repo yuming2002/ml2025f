@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      透過本次作業，學習如何用 colab 把 .dcm 檔案轉成 .png 檔案，以及 .json 檔案轉成 .txt 檔案，並使學生研究如何使用新工具 Labelme 來標記主動脈辨的位置，讓我對機器學習使用監督式的方式能更好的訓練資料這點有了更深入的了解。
     </div>
   </div>
 
@@ -169,22 +169,28 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 將06_ct.nii.gz 透過3D Slicer 還原成233切的 .dcm檔，將含有主動脈瓣的 .dcm壓縮成 dcm.zip 透過 Colab 轉成 .png檔。<br>
+              使用 Labelme 內建基本功能 Create Rectangle，對 .png檔進行手動主動脈瓣標註。<br>
+              將標註過程全程錄影，然後將影片上傳到 YouTube (或是直播到YouTube)。</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 將06_ct.nii.gz 透過3D Slicer 擴充圖片至64張。<br>
+              使用 Labelme 內建基本功能 Create Rectangle，對 .png檔進行手動主動脈瓣標註。<br>
+              將標註過程全程錄影，然後將影片上傳到 YouTube (或是直播到YouTube)。</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 上傳整理完的一份 .txt 檔至 github<br>
+              AP 分數，名列全班前20名。(1pt)<br>
+              AP 分數，名列全班前10名。(1pt)</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -196,9 +202,23 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      Simple 標註 15:44~24:08、Medium 標註 29:36~37:45
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/1uBc4IzQb6U?si=quL4kesRYlyQoLkR"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+      標註檔連結: 
+      <a href="https://github.com/yuming2002/ml2025f/blob/main/hw04/113598044.txt" target="_blank">
+        https://github.com/yuming2002/ml2025f/blob/main/hw04/113598044.txt
+      </a>
     </div>
   </div>
 

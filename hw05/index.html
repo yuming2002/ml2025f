@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      我先前在大學時期也使用過 YOLOv4 標記紅綠燈的經驗，啟發了本次對模型訓練的更深入探索。透過幾十次的嘗試，我理解到訓練過程中各項數值的設定，是如何直接決定最終 mAP 分數的偏好與走向，從而掌握了優化模型表現的關鍵。
     </div>
   </div>
 
@@ -169,22 +169,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成 baseline Colab 訓練得到訓練分數及訓練權重</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 調整訓練筆數、Epochs 或其他參數得到比 Simple baseline 更高的分數</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 使用不同版本、大小模型進行訓練並繳交 Colab</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -196,9 +196,12 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      Simple Baseline mAP50 分數圖片
+      <img src="simple.png" alt="Simple Baseline mAP50分數" style="width:100%;max-width:100%;">
+    </div>
+    <div class="col-md-12 twenty">
+      Medium Baseline mAP50 分數圖片，初次訓練時將 imagsz 數值修改成 660 用以得到更高分
+      <img src="mid660.png" alt="Medium Baseline mAP50分數" style="width:100%;max-width:100%;">
     </div>
   </div>
 
